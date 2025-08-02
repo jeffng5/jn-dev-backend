@@ -5,11 +5,11 @@ require('dotenv').config()
 app.use(express.json());
 app.use(cors());
 
-const db = require('./db.js').default
+const pool = require('./db.js')
 
 app.post('/api/count', async (req, res, next) => {
     try {
-        const result = await db.query(`UPDATE totals SET total = total + 1 RETURNING *`)
+        const result = await pool.query(`UPDATE totals SET total = total + 1 RETURNING *`)
         let visitorCount = result.rows
         return res.json({visitorCount})
     } catch (err) {
@@ -19,7 +19,7 @@ app.post('/api/count', async (req, res, next) => {
 
 app.get('/api/count', async (req, res, next) => {
     try {
-        const result = await db.query(`SELECT total FROM totals`)
+        const result = await pool.query(`SELECT total FROM totals`)
         let ans = result.rows;
         return res.json({ans})
     } catch(err){
