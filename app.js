@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(cors());
 
 const pool = require('./db.js')
-pool.connect();
+
 
 app.post('/api/count', async (req, res, next) => {
     try {
