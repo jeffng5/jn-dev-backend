@@ -1,4 +1,4 @@
-const { Client } = require("pg");
+import { Client } from "pg";
 
 let db;
 const PASSWORD = process.env.PASSWORD;
@@ -22,4 +22,4 @@ if (process.env.NODE_ENV === "production") {
 
 db.connect();
 
-module.exports = db;
+export default db;

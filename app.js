@@ -5,7 +5,7 @@ require('dotenv').config()
 app.use(express.json());
 app.use(cors());
 
-const db = require('./db.js')
+const db = require('./db.js').default
 
 app.post('/api/count', async (req, res, next) => {
     try {
