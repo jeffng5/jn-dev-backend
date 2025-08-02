@@ -1,8 +1,8 @@
 "use strict";
 
-const app = require("./app");
+import app from './app.js';
 
 
-app.listen(3000, function () {
-  console.log(`Started on http://0.0.0.0:3000`);
+app.listen(3002, function () {
+  console.log(`Started on http://localhost:3002`);
 });
