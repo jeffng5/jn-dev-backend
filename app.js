@@ -8,7 +8,7 @@ app.use(cors());
 const pool = require('./db.js')
 
 
-app.post('/api/count', async (req, res, next) => {
+app.post('/', async (req, res, next) => {
     try {
         const result = await pool.query(`UPDATE totals SET total = total + 1 RETURNING total`)
         let visitorCount = result.rows
