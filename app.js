@@ -10,8 +10,9 @@ const pool = require('./db.js')
 
 app.post('/api/count', async (req, res, next) => {
     try {
-        const result = await pool.query(`UPDATE totals SET total = total + 1 RETURNING *`)
+        const result = await pool.query(`UPDATE totals SET total = total + 1 RETURNING total`)
         let visitorCount = result.rows
+        console.log(result, visitorCount)
         return res.json({visitorCount})
     } catch (err) {
         return next(err)
