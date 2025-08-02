@@ -1,0 +1,20 @@
+{
+  "name": "jn-dev-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffng5/jn-dev-backend.git"
+  },
+  "author": "jeff ng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffng5/jn-dev-backend/issues"
+  },
+  "homepage": "https://github.com/jeffng5/jn-dev-backend#readme",
+  "description": ""
+}
