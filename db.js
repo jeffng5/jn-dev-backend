@@ -7,7 +7,7 @@ const DATABASE_PORT = process.env.DATABASE_PORT;
 
 if (process.env.NODE_ENV === "production") {
   db = new Client({
-    connectionString: ``,
+    connectionString: `postgres://visitor_count_2u0z_user:rvmtNIj4QcCENElBrzGaVTWDD21miZ2c:postgresql://visitor_count_2u0z_user:rvmtNIj4QcCENElBrzGaVTWDD21miZ2c@dpg-d26v1tfdiees73b5c4vg-a.oregon-postgres.render.com/visitor_count_2u0z`,
   
     ssl: {
       rejectUnauthorized: false
