@@ -17,9 +17,5 @@
     "url": "https://github.com/jeffng5/jn-dev-backend/issues"
   },
   "homepage": "https://github.com/jeffng5/jn-dev-backend#readme",
-  "keywords": [],
-  "description": "",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+  "description": ""
 }
